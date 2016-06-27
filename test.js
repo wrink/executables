@@ -1,9 +1,12 @@
-#!/usr/bin/env node
+load("https://raw.githubusercontent.com/wrink/Runner/master/Runner.js");
 
-if (process.argv.length > 2) {
-  for (var i = 2; i < process.argv.length; i++) {
-    console.log(process.argv[i]);
-  }
-} else {
-  console.log("Hello World");
-}
+print ("\nruby:")
+run ("https://raw.githubusercontent.com/wrink/executables/master/test.rb")
+print ("\nperl:")
+run ("https://raw.githubusercontent.com/wrink/executables/master/test.pl")
+print ("\npython:")
+run ("https://raw.githubusercontent.com/wrink/executables/master/test.py")
+print ("\nphp:")
+run ("https://raw.githubusercontent.com/wrink/executables/master/test.php")
+print ("\nC:")
+run ("https://raw.githubusercontent.com/wrink/executables/master/a.out")
